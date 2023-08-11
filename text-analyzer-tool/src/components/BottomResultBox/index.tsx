@@ -1,16 +1,7 @@
 import './index.scss'
+import { BottomResultBoxType } from "../../types";
 
-const BottomResultBox = () => {
-  const bottomResultBar = [
-    {
-      title: 'Average Reading Time:',
-      value: '-',
-    },
-    {
-      title: 'Longest word:',
-      value: '-',
-    },
-  ]
+const BottomResultBox = ({ bottomResultBar }: BottomResultBoxType) => {
 
   return (
     <div className="bottom-result-bar">

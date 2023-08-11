@@ -1,28 +1,7 @@
 import './index.scss'
+import { ResultBoxType } from "../../types";
 
-const ResultBox = () => {
-  const resultBar = [
-    {
-      title: 'Words',
-      value: 0,
-    },
-    {
-      title: 'Characters',
-      value: 0,
-    },
-    {
-      title: 'Sentences',
-      value: 0,
-    },
-    {
-      title: 'Paragraphs ',
-      value: 0,
-    },
-    {
-      title: 'Pronouns',
-      value: 0,
-    },
-  ]
+const ResultBox = ({ resultBar }: ResultBoxType) => {
 
   return (
     <div className="result-bar">
